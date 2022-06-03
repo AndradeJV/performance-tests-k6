@@ -17,5 +17,5 @@ jobs:
         run: xk6 build --with github.com/mstoykov/xk6-counter@latest
 
       - name: Run k6 extension test
-        run: ./k6 run extension/script.js
+        run: ./k6 run src/index.js
 
