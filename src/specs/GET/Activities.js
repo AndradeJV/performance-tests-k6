@@ -10,7 +10,7 @@ export let GetCustomerReqs = new Rate('get_customer_reqs');
 
 
 export default function () {
-    let response = http.get('https://fakerestapi.azurewebsites.net/api/v1/Activities')
+    let response = http.get(`https://fakerestapi.azurewebsites.net/api/v1/Activities`)
     
     
     GetCustomerDuration.add(response.timings.duration);
